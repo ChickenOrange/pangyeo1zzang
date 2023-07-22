@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{87978479-F99C-29F0-4BF0-2EA68D43E9A1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameSource/tree/script/Branch.cs">
+    <Files>
+      <File FileName="Assets/GameSource/tree/script/Leaf.cs" Line="6" Column="2" />
+      <File FileName="Assets/GameSource/tree/script/Branch.cs" Line="10" Column="5" />
+      <File FileName="Assets/GameSource/GameManager.cs" Line="17" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MIP" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="GameSource" expanded="True">
+                <Node name="tree" expanded="True">
+                  <Node name="script" expanded="True">
+                    <Node name="Branch.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2cd6dda2-adff-417d-9f7d-25d84d92f217" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
