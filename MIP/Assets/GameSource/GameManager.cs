@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
             foreach (var item in branches)
             {
-                item.CheckCondition_BeBranch();
+                item.CheckCondition_PerWeek();
             }
         }
     }

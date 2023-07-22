@@ -10,8 +10,8 @@ public class Branch : MonoBehaviour
     int branchNodeCnt;
     int canBeBranchAge;   //성장만기 : 이만큼 지나야 랜덤하게 브랜치를 만들 수 있음
 
-    bool isCheckBeBranch;
-   
+    Branch preBranch;
+
     public List<GameObject> joints = new List<GameObject>();
     public List<Leaf> leafs;
 
@@ -52,23 +52,24 @@ public class Branch : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 
-    public void CheckCondition_BeBranch()
+    public void CheckCondition_PerWeek()
     {
         branchAge++;
+        CheckCondition_GrowingBranch();
+    }
+
+    void CheckCondition_GrowingBranch()
+    {
         if (bornedWeek + canBeBranchAge <= branchAge)
         {
             //be branch
             for (int i = 0; i < leafs.Count; i++)
             {
-                if (Random.Range(0, 1) < GameManager.Instance.BranchInfo.beBranchProbability)
+                if (Random.Range(0.0f, 1.0f) < GameManager.Instance.BranchInfo.beBranchProbability)
                 {
-                    leafs[i].BeBranch();
+                    leafs[i].BeBranch(this, (i == leafs.Count - 1) ? true : false);
                 }
                 else
                 {
@@ -76,16 +77,24 @@ public class Branch : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            transform.localScale = Vector3.one / 3 * (branchAge + 1);
+        }
     }
 
-    public void SetBranchInfo(int _branchNodeCnt)
+
+    public void SetBranchInfo(Branch _preBranch, int _branchNodeCnt)
     {
+        preBranch = _preBranch;
         branchNodeCnt = _branchNodeCnt;
 
         //노드 개수에 따라 성장만기를 설정
         if (branchNodeCnt < 4) canBeBranchAge = 3;
         else canBeBranchAge = 4;
 
-        bornedWeek = GameManager.Instance.elapsedWeek;
+        bornedWeek = GameManager.Instance.elapsedWeek;  //기준나이설정
+
+        gameObject.transform.localScale = Vector3.one / canBeBranchAge;
     }
 }

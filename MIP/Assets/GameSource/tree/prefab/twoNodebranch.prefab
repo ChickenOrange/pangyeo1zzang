@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 3431733407649834748}
   - component: {fileID: 2651093588171650088}
   m_Layer: 0
-  m_Name: leaf (2)
+  m_Name: rightLeaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,8 +149,8 @@ Transform:
   m_GameObject: {fileID: 1592811439594622424}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: -1, y: -1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4182468718838721315}
   m_RootOrder: 4
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78561549ae47544769e40831a41aaff5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 887ccb66d31524a9f94e1b18ef4128eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -219,7 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c08c98162594a4e8f05587f2822ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafPos: {fileID: 0}
+  leafPos: {fileID: 4182699800201280744}
+  isRight: 1
 --- !u!1 &2186547087320533684
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +233,7 @@ GameObject:
   - component: {fileID: 8937830726753966831}
   - component: {fileID: 4382571459743333929}
   m_Layer: 0
-  m_Name: leaf (3)
+  m_Name: leftLeaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78561549ae47544769e40831a41aaff5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fc3014c01301461186455135bfb1930, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -317,7 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c08c98162594a4e8f05587f2822ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafPos: {fileID: 0}
+  leafPos: {fileID: 4182699800201280744}
+  isRight: 0
 --- !u!1 &3549062521574977945
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +346,7 @@ Transform:
   m_GameObject: {fileID: 3549062521574977945}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.333, y: 0.333, z: 0.333}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4472829243769308142}
@@ -477,7 +479,7 @@ GameObject:
   - component: {fileID: 8858085445397463018}
   - component: {fileID: 7631270179883323074}
   m_Layer: 0
-  m_Name: leaf2
+  m_Name: topLeaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +492,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4289702010689780442}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1}
   m_ConstrainProportionsScale: 0
@@ -539,7 +541,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d4fa6617aff7741fba805ac0df3597d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9eb1f8249940a4984a1e0eb22cd1e058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -562,7 +564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c08c98162594a4e8f05587f2822ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafPos: {fileID: 0}
+  leafPos: {fileID: 4182699801283782514}
+  isRight: 0
 --- !u!1 &5171646370817096673
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +643,7 @@ GameObject:
   - component: {fileID: 5756405854748730510}
   - component: {fileID: 8495925131212193178}
   m_Layer: 0
-  m_Name: leaf (1)
+  m_Name: leftBottomLeaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,7 +705,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78561549ae47544769e40831a41aaff5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fc3014c01301461186455135bfb1930, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -725,7 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c08c98162594a4e8f05587f2822ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafPos: {fileID: 0}
+  leafPos: {fileID: 4182699801236705165}
+  isRight: 0
 --- !u!1 &7253707735853729826
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +774,7 @@ GameObject:
   - component: {fileID: 3780844369645743773}
   - component: {fileID: 2595859878248323443}
   m_Layer: 0
-  m_Name: leaf
+  m_Name: rightBottomLeaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +789,7 @@ Transform:
   m_GameObject: {fileID: 7903824173136554813}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4182468718838721315}
@@ -832,7 +836,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78561549ae47544769e40831a41aaff5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 887ccb66d31524a9f94e1b18ef4128eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -855,7 +859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c08c98162594a4e8f05587f2822ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafPos: {fileID: 0}
+  leafPos: {fileID: 4182699801236705165}
+  isRight: 1
 --- !u!1 &7907720785738428484
 GameObject:
   m_ObjectHideFlags: 0
